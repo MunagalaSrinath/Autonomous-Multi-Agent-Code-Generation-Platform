@@ -14,6 +14,13 @@ code_task:
     Write a python module that implements the design described by the engineering lead,
     in order to achieve the requirements.
     Here are the requirements: {requirements}
+    IMPORTANT: |
+    Output ONLY raw Python code.
+    DO NOT include markdown formatting.
+    DO NOT include ``` or ```python.
+    The code must be executable without modification.
+    Do NOT use deprecated APIs (e.g., gradio .style()).
+    Use Gradio v4 syntax only.
   expected_output: >
     A python module that implements the design and achieves the requirements.
     IMPORTANT: Output ONLY the raw Python code.
@@ -27,6 +34,13 @@ frontend_task:
     Write a gradio UI in a module app.py that demonstrates the given backend class in {module_name}.
     Assume there is only 1 user, and keep the UI clean.
     Here are the requirements: {requirements}
+    IMPORTANT: |
+    Output ONLY raw Python code.
+    Use Gradio v4 syntax.
+    DO NOT use .style().
+    Every button MUST have a .click() handler.
+    Functions MUST return outputs.
+    The UI must be fully interactive and functional.
   expected_output: >
     A working gradio UI.
   agent: frontend_engineer
